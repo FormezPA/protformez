@@ -1,0 +1,25 @@
+<extension>         
+	<modules>                
+		<module>        
+			<id>FormezLoginExtensions</id>
+			<auto-deploy>true</auto-deploy>
+			<customizations>            
+				<customization>                
+					<targetPackageRoot>org.alfresco.components.guest</targetPackageRoot>                
+					<sourcePackageRoot>it.formez.formez.extensions.guest</sourcePackageRoot>             
+				</customization>    	         
+			</customizations>
+		</module>
+		<module>
+			<id>FormezExtensions</id>
+			<auto-deploy>true</auto-deploy>
+			<evaluator type="site.module.evaluator">
+				<params>
+					<sitePresets>formez-site</sitePresets>
+					<sites>.*</sites>
+					<applyForNonSites>false</applyForNonSites>
+				</params>
+			</evaluator>
+		</module>
+	</modules>
+</extension>

@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgRoleDelete</shortname>
+	<description>formezOrgRoleDelete</description>
+	<url>/formez/org/roles/delete</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

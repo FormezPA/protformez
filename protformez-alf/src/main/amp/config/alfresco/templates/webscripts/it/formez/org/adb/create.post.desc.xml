@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgAdbCreate</shortname>
+	<description>formezOrgAdbCreate</description>
+	<url>/formez/org/adb/create</url>
+	<format default="json"/>
+	<authentication>user</authentication>
+</webscript>

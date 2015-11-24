@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Daily History</shortname>
+  <description>get daily history for a day</description>
+  <url>/formez/reg/docs/dailyhistory</url>
+  <format default="json">argument</format>
+  <authentication>user</authentication>
+</webscript>

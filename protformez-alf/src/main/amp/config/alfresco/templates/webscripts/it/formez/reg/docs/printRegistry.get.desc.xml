@@ -1,0 +1,9 @@
+<webscript>
+  <shortname>Print Registry</shortname>
+  <description>Creates a receipt of protocols</description>
+  <url>/formez/reg/docs/printRegistry</url>
+  <format default="html">argument</format>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+</webscript>

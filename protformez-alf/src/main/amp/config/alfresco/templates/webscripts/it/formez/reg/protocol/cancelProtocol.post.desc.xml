@@ -1,0 +1,9 @@
+<webscript>
+  <shortname>Cancel Protocol</shortname>
+  <description>Webscript to cancel protocol</description>
+  <url>/formez/reg/protocol/cancel-protocol</url>
+  <format default="json"/>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+</webscript>

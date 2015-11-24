@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgRoleCreate</shortname>
+	<description>formezOrgRoleCreate</description>
+	<url>/formez/org/roles/create</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

@@ -1,0 +1,9 @@
+<webscript>
+  <shortname>Get protocol list</shortname>
+  <description>Return protocol list</description>
+  <url>/formez/reg/protocol/list</url>
+  <format default="json" />
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+</webscript>

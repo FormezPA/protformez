@@ -1,0 +1,9 @@
+<webscript>
+  <shortname>CreateProtocol</shortname>
+  <description>Create Protocol</description>
+  <url>/formez/reg/protocol/new</url>
+  <format default="json"/>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+</webscript>

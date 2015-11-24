@@ -1,0 +1,9 @@
+<webscript>
+  <shortname>Signature Creation</shortname>
+  <description>Webscript for signature creation</description>
+  <url>/formez/reg/docs/signature</url>
+  <format default="html">argument</format>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+</webscript>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+	<id>flows</id>
+	<template-instance>flows-instance</template-instance>
+	<authentication>user</authentication>
+	<components>
+		<component>
+			<region-id>flows</region-id>
+			<url>/formez/page/flows</url>
+		</component>
+    </components>
+</page>

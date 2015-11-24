@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUsersPermissions</shortname>
+	<description>formezOrgUsersPermissions</description>
+	<url>/formez/org/users/permissions</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

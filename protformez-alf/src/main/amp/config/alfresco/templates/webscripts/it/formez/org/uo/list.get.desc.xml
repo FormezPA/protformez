@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUoList</shortname>
+	<description>formezOrgUoList</description>
+	<url>/formez/org/uo/list</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

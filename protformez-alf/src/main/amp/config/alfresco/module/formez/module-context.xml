@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+	<bean id="formez.model.dictionaryBootstrap" parent="dictionaryModelBootstrap" depends-on="reg.model.dictionaryBootstrap">
+        <property name="models">
+            <list>
+            	<!-- aoo organization model -->
+                <value>alfresco/module/formez/org/model/orgModel.xml</value>
+                <!-- cfg model -->
+                <value>alfresco/module/formez/org/model/cfgModel.xml</value>
+                <!-- doc model -->
+                <value>alfresco/module/formez/doc/model/docModel.xml</value>
+            </list>
+        </property>
+    </bean>
+    
+    <!-- inject service registry -->
+    <bean id="formez.model.registryBootstrap" class="it.formez.model.FormezModel">
+        <property name="serviceRegistry" ref="ServiceRegistry" />
+        <property name="policyComponent" ref="policyComponent" />
+    </bean>
+    
+    <!-- aoo webscript -->
+    <import resource="classpath:alfresco/module/formez/org/webscript-context.xml"/>
+    
+    
+</beans>    

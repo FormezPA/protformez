@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezGeneralGet</shortname>
+	<description>formezGeneralGet</description>
+	<url>/formez/picker/generalget</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

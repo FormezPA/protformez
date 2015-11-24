@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="addbook:model" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+   <!-- Optional meta-data about the model -->
+   <description>Address Book Model</description>
+   <author></author>
+   <version>1.0</version>
+
+   <imports>
+      <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+      <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+   </imports>
+
+   <namespaces>
+      <namespace uri="http://www.reg.it/model/addbook/1.0" prefix="addbook"/>
+   </namespaces>
+
+   <types>
+
+      <type name="addbook:contact">
+         <title>Contact</title>
+         <parent>cm:content</parent>
+         <properties>
+         	<property name="addbook:name">
+               <title>Nome</title>
+               <type>d:text</type>
+            </property>
+            <property name="addbook:vatNumber">
+               <title>Partita IVA</title>
+               <type>d:text</type>
+            </property>
+            <property name="addbook:address">
+               <title>Indirizzo</title>
+               <type>d:text</type>
+            </property>
+            <property name="addbook:cap">
+               <title>CAP</title>
+               <type>d:text</type>
+            </property>
+            <property name="addbook:city">
+               <title>Località</title>
+               <type>d:text</type>
+            </property>
+            <property name="addbook:district">
+               <title>Provincia</title>
+               <type>d:text</type>
+            </property>
+            <property name="addbook:email">
+               <title>Email</title>
+               <type>d:text</type>
+            </property>
+            <property name="addbook:telephone">
+               <title>Telefono</title>
+               <type>d:text</type>
+            </property>
+            <property name="addbook:notes">
+               <title>Note</title>
+               <type>d:text</type>
+            </property>
+         </properties>
+      </type>
+
+    </types>
+
+</model>

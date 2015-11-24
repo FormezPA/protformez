@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUoDelete</shortname>
+	<description>formezOrgUoDelete</description>
+	<url>/formez/org/uo/delete</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

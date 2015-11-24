@@ -1,0 +1,5 @@
+<webscript>
+  <shortname>formez-users</shortname>
+  <description>Users</description>
+  <url>/formez/page/users</url>
+</webscript>

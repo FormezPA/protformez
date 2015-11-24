@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUoMove</shortname>
+	<description>formezOrgUoMove</description>
+	<url>/formez/org/uo/move</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

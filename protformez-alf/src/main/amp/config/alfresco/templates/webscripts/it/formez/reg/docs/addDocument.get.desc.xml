@@ -1,0 +1,9 @@
+<webscript>
+  <shortname>Add document to protocol</shortname>
+  <description>Webscript to Add document to protocol</description>
+  <url>/formez/reg/docs/add-document</url>
+  <format default="json">argument</format>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+</webscript>

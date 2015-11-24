@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezPickerForm</shortname>
+	<description>formezPickerForm</description>
+	<url>/formez/picker/form</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

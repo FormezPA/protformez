@@ -1,0 +1,9 @@
+<webscript>
+  <shortname>Create Multiple Protocol</shortname>
+  <description>Create Multiple Protocol</description>
+  <url>/formez/reg/protocol/createMultipleProtocol</url>
+  <format default="json"/>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+</webscript>

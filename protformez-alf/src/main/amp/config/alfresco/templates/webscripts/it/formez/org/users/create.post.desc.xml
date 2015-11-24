@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUserCreate</shortname>
+	<description>formezOrgUserCreate</description>
+	<url>/formez/org/users/create</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

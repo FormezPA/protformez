@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgAdbList</shortname>
+	<description>formezOrgAdbList</description>
+	<url>/formez/org/adb/list</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

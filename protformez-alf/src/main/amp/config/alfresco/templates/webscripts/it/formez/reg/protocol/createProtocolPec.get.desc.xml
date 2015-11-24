@@ -1,0 +1,9 @@
+<webscript>
+  <shortname>CreateProtocolPec</shortname>
+  <description>Create Protocol From eml</description>
+  <url>/formez/reg/protocol/pec</url>
+  <format default="json"/>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+</webscript>

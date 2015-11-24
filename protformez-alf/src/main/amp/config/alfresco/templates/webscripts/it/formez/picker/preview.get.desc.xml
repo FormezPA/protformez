@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezPickerPreview</shortname>
+	<description>formezPickerPreview</description>
+	<url>/formez/picker/preview</url>
+	<format default="html">argument</format>
+	<authentication>user</authentication>
+</webscript>

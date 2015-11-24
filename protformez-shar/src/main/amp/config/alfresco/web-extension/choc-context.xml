@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+
+<beans>
+
+   <!-- Override WebScript Messages - add slingshot application messages -->
+   <bean id="formez.custom.resources" class="org.springframework.extensions.surf.util.ResourceBundleBootstrapComponent">
+      <property name="resourceBundles">
+         <list>
+            <value>alfresco.web-extension.messages.formez</value>
+         </list>
+      </property>
+   </bean>
+   
+   <!-- add formez share config -->
+   <bean id="formez.custom.config" class="org.springframework.extensions.config.ConfigBootstrap" init-method="register">
+      <property name="configService" ref="web.config" />
+      <property name="configs">
+         <list>
+            <value>classpath:alfresco/web-extension/formez-share-config.xml</value>
+         </list>
+      </property>
+   </bean>
+   
+   <!-- ftl root objects custom -->
+   <bean id="slingshot.templateprocessor.formez.permissions" parent="baseTemplateExtension" class="it.formez.formez.scripts.PermsQuery">
+      <property name="extensionName" value="perms" />
+   </bean>
+   <bean id="slingshot.templateprocessor.formez.config" parent="baseTemplateExtension" class="it.formez.formez.scripts.CfgQuery">
+      <property name="extensionName" value="cfg" />
+   </bean>
+   
+</beans>

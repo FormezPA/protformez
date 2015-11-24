@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgAooGov</shortname>
+	<description>formezOrgAooGov</description>
+	<url>/formez/org/aoo/gov</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

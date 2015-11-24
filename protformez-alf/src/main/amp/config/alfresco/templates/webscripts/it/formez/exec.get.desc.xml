@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezexec</shortname>
+	<description>Get exec client</description>
+	<url>/formez/exec</url>
+	<format default="html">argument</format>
+	<authentication>user</authentication>
+</webscript>

@@ -1,0 +1,5 @@
+<webscript>
+  <shortname>formez-settings</shortname>
+  <description>Settings</description>
+  <url>/formez/page/settings</url>
+</webscript>

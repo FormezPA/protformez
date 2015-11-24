@@ -1,0 +1,5 @@
+<webscript>
+  <shortname>CfgCleaner</shortname>
+  <description>Clean config for current site</description>
+  <url>/formez/cfgcleaner</url>
+</webscript>

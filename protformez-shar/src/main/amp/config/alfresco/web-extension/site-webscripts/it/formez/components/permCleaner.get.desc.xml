@@ -1,0 +1,5 @@
+<webscript>
+  <shortname>PermCleaner</shortname>
+  <description>Clean permissions for current site</description>
+  <url>/formez/permcleaner</url>
+</webscript>

@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUsersSearch</shortname>
+	<description>formezOrgUsersSearch</description>
+	<url>/formez/org/users/search</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

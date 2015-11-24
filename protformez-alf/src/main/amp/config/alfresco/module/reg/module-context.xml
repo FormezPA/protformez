@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+
+<beans>
+
+	<bean id="reg.model.dictionaryBootstrap" parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap">
+        <property name="models">
+            <list>
+                <value>alfresco/module/reg/model/titolarioModel.xml</value>
+                <value>alfresco/module/reg/model/addressbookModel.xml</value>
+                <value>alfresco/module/reg/model/regModel.xml</value>
+                <value>alfresco/module/reg/model/auditModel.xml</value>
+            </list>
+        </property>
+    </bean>
+    
+   <!-- Import webscript context  -->
+   <import resource="classpath:alfresco/module/reg/webscript-context.xml"/>
+    
+</beans>    

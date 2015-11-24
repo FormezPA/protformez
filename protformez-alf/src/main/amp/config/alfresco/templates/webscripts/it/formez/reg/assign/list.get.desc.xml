@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>List Assigned Protocol</shortname>
+  <description>List of assigned protocol for current user</description>
+  <url>/formez/reg/assign/list</url>
+  <format default="json">argument</format>
+  <authentication>user</authentication>
+</webscript>

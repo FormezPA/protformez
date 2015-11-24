@@ -1,0 +1,201 @@
+
+
+
+/* Tablet Landscape */
+@media only screen and (min-width: 958px) and (max-width: 1278px) {
+	
+	
+	/* Protocollo */
+	
+	.formez-protocollo .col_center_container .panel-body button{
+		margin:0 10px 10px 0;
+		display:block;
+		width:100%;
+		text-align:left;}
+		
+		
+		
+	.formez-protocollo .col_right_container .input-group button{
+		margin:0 10px 0 0;} 
+	
+	
+	.formez-protocollo .col_right_container .reg-advsearch .form-group .col-md-3{
+		width:33%;}
+		
+	.col_right_container table ul.reg-actions li a{
+		padding:10px 5px;}
+		
+	.formez-protocollo .reg-assocs .fa{
+		padding:0 6px;}
+		
+	.formez-service .col-md-5{
+		width:58.3333%;
+		}
+
+	.formez-service .col-md-offset-7{
+		margin-left:41.6667%;}
+	
+	.formez-service{
+		position:fixed;}
+		
+	.formez-service .row >div{
+		overflow:auto;
+		min-height:100%;
+	}
+	
+	.formez-cos .col_right_container .panel-body .col-md-4{
+		width:43.3333%;}
+
+	
+	.formez-org .col_center_container .list-group.org-uo-roles li.list-group-item,
+	.formez-org .col_center_container .list-group.org-uo-users li.list-group-item,
+	.formez-org .col_center_container .list-group.org-uo-tits li.list-group-item{
+		width:45%;}
+	
+	.col_center_container .panel-heading h3.org-uo-name a.pull-right{
+		padding:7px 6px;}
+		
+	.formez-org .col_center_container .form-group .col-sm-3 button.btn-default,
+.formez-audit .col_center_container .form-group .col-sm-3 button.btn-default{
+	margin-left:-25px;
+	margin-top:1px;
+	padding:6px 12px 8px 12px;}
+	
+	.container-fluid.formez-home .col_center_container{
+		margin:10px;}
+		
+	.formez-protocollo #reg-list td.reg-assocs .fa{
+		padding:10px;
+		border:1px solid #EEEEEE;}
+	
+	
+	} /*close*/
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	#wrapper, .share-div{
+		height:auto;}
+		
+	#wrapper .col_right_container{
+		padding:10px;
+		}
+	
+	
+	
+	#top-nav .title_container h2{
+		font-size:14px;
+		font-weight:normal;}
+	
+	#top-nav .col-md-9{
+		width:65%;
+		float:right;
+		margin:-25px 0 0 0;}
+	
+	
+	#top-nav .col-md-3{
+		width:30%;}
+	
+	
+	.navbar-brand, .navbar-nav > li > a{
+		padding:10px 5px;}
+		
+	.container-fluid .col_center_container{
+		padding:0px 10px 10px 10px;}
+	
+	.formez-titolario .col_right_container .pull-right{
+		display:none;}
+	
+	.formez-service > .container-fluid > .row > div[class^="col-md-offset-"]{
+		margin-left:20%;}
+		
+	.formez-protocollo .col_center_container ul.list-group{
+		border-top:0;
+		margin:0 0 0 15px;}
+	
+		
+	.formez-protocollo .col_center_container ul.list-group li{
+		float:left;
+		width:29%;
+		border-top:0;
+		border-bottom:0px;
+		margin:0 5px 0 0;
+		background-color:#EDEDED;}
+	
+	
+	#wrapper .col_right_container{
+		margin:10px 10px 10px 10px;
+		-webkit-box-shadow: 0 0 4px 1px rgba(0,0,0,0.1);
+box-shadow: 0 0 4px 1px rgba(0,0,0,0.1);}
+
+	.formez-titolario .col_right_container .tit-doclib{
+		margin:0;}
+	
+	
+	.formez-titolario .col_option_container{
+		padding:0 10px 10px 10px;
+		margin:0;}
+	
+	.formez-mail .col_center_container .panel ul.list-group{
+		border:0;
+		margin:0 0 0 15px;}
+	
+	.formez-mail .col_center_container .panel ul.list-group li{
+		float:left;
+		width:31%;
+		border-top:0;
+		border-bottom:0px;
+		margin:0 5px 0 0;
+		background-color:#EDEDED;
+		}
+		
+	.pec-mail-list .form-horizontal input.form-control{
+		margin-bottom:10px;}
+		
+	.formez-flows .col_center_container .panel ul.list-group{
+		border:0;
+		margin:0 0 0 15px;}	
+	
+	.formez-flows .col_center_container .panel ul.list-group li{
+		float:left;
+		width:31%;
+		border-top:0;
+		border-bottom:0px;
+		margin:0 5px 0 0;
+		background-color:#EDEDED;}
+	
+	.formez-legaldoc .col_right_container .ldi-list-dates,
+	.formez-users .col_right_container input.users-filter,
+	.formez-users .col_right_container table button,
+	.formez-rubrica .col_right_container input.adb-filter{
+		margin-bottom:10px;}
+		
+	.container-fluid.formez-home .col_center_container{
+		margin:10px;}
+		
+	
+	.formez-rubrica .panel > .list-group .list-group-item{
+		width:100%;
+		min-height:100px;}
+		
+	.formez-protocollo #reg-list .fa{
+		padding:10px;
+		border:1px solid #EEEEEE;}
+	
+	} /*close*/
+
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	} /*close*/
+
+
+
+/* Vertical Iphone */
+@media only screen and (max-width: 479px) {
+	
+	} /*close*/

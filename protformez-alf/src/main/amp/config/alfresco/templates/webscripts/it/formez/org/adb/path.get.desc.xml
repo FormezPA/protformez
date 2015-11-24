@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgAdbPath</shortname>
+	<description>formezOrgAdbPath</description>
+	<url>/formez/org/adb/path</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

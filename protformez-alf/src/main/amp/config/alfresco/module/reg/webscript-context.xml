@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+
+<beans>
+    
+    <!-- Webscript to import default titolario data -->
+    <bean id="webscript.it.formez.reg.util.bootstraptitolariodata.get" class="it.formez.reg.webscript.BootstrapTitolario" parent="webscript" />
+    
+    <!-- Webscript to link scanned docs to protocol -->
+    <bean id="webscript.it.formez.reg.scanner.link.post" class="it.formez.reg.webscript.LinkDocs2Protocol" parent="webscript" />
+    
+    <!-- Webscript to print signature -->
+    <bean id="webscript.it.formez.reg.docs.signature.get" class="it.formez.reg.webscript.CreateSignature" parent="webscript" />
+    
+    <!-- Webscript to print xml signature -->
+    <bean id="webscript.it.formez.reg.docs.xmlSignature.get" class="it.formez.reg.webscript.CreateSignatureXml" parent="webscript" />
+    
+    <!-- Webscript for cancel protocol -->
+    <bean id="webscript.it.formez.reg.protocol.cancelProtocol.post" class="it.formez.reg.webscript.CancelProtocol" parent="webscript" />
+    
+    <!-- Webscript to print receipt -->
+    <bean id="webscript.it.formez.reg.docs.receipt.get" class="it.formez.reg.webscript.CreateReceipt" parent="webscript" />
+    
+    <!-- Webscript to add document -->
+    <bean id="webscript.it.formez.reg.docs.addDocument.get" class="it.formez.reg.webscript.AddDocument" parent="webscript" />
+    
+    <!-- Webscript to print registry -->
+    <bean id="webscript.it.formez.reg.docs.printRegistry.get" class="it.formez.reg.webscript.PrintRegistry" parent="webscript" />
+    
+    <!-- Webscript for create protocol -->
+    <bean id="webscript.it.formez.reg.protocol.createProtocol.post" class="it.formez.reg.webscript.CreateProtocol" parent="webscript" />
+    
+    <!-- Webscript to protocol pec message -->
+    <bean id="webscript.it.formez.reg.protocol.createProtocolPec.get" class="it.formez.reg.webscript.CreateProtocolPec" parent="webscript" />
+
+    <!-- Webscript for multiple protocols -->
+    <bean id="webscript.it.formez.reg.protocol.createMultipleProtocol.get" class="it.formez.reg.webscript.CreateMultipleProtocol" parent="webscript" />
+    
+    <!-- Webscript for fascicolo status -->
+    <bean id="webscript.it.formez.reg.util.fascicoloState.get" class="it.formez.reg.webscript.ChangeFascicoloStatus" parent="webscript" />
+    
+    <!-- Webscript for filings -->
+    <bean id="webscript.it.formez.reg.protocol.filings.post" class="it.formez.reg.webscript.AddFilings" parent="webscript" />
+</beans>

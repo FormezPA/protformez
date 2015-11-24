@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgAdbDelete</shortname>
+	<description>formezOrgAdbDelete</description>
+	<url>/formez/org/adb/delete</url>
+	<format default="json"/>
+	<authentication>user</authentication>
+</webscript>

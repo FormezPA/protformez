@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>formezFlowStep</shortname>
+  <description>Workflow step</description>
+  <url>/formez/flow/step</url>
+  <authentication>user</authentication>
+  <format default="json">argument</format>
+</webscript>

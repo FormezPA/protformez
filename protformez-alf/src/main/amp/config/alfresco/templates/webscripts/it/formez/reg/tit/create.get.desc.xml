@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezRegTitCreate</shortname>
+	<description>Create a titolario folder</description>
+	<url>/formez/reg/tit/create</url>
+	<format default="json">argument</format>
+	<authentication>user</authentication>
+</webscript>

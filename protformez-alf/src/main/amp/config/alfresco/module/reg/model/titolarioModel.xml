@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="tit:model" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+	<description>titolario model</description>
+	<author></author>
+	<version>1.0</version>
+	<imports>
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"></import>
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"></import>
+	</imports>
+
+	<namespaces>
+		<namespace uri="http://www.reg.it/model/tit/1.0" prefix="tit"></namespace>
+	</namespaces>
+
+	<constraints>
+		<constraint name="tit:StatoList" type="LIST">
+			<parameter name="allowedValues">
+				<list>
+					<value>Aperto</value>
+					<value>Chiuso</value>
+				</list>
+			</parameter>
+		</constraint>
+		<constraint name="tit:PresenzaFascicoliList" type="LIST">
+			<parameter name="allowedValues">
+				<list>
+					<value>Si</value>
+					<value>No</value>
+				</list>
+			</parameter>
+		</constraint>
+	</constraints>
+	
+	<types>
+	
+		<type name="tit:baseFolder">
+			<title>Cartella base titolario</title>
+			<description>Cartella per la documentlibrary del site Titolario
+			</description>
+			<parent>cm:folder</parent>
+			<properties>
+				<property name="tit:baseFolderNumber">
+					<title>Numero</title>
+					<type>d:int</type>
+				</property>
+			</properties>
+		</type>
+		
+		<type name="tit:titolo">
+			<title>Titolo</title>
+			<description>Titolo</description>
+			<parent>tit:baseFolder</parent>
+			<properties>
+				<property name="tit:titoloNome">
+					<title>Nome</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:titoloDescrizione">
+					<title>Descrizione</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:titoloNumero">
+					<title>Numero</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:titoloStato">
+					<title>Stato</title>
+					<type>d:text</type>
+					<default>Aperto</default>
+					<constraints>
+						<constraint ref="tit:StatoList"></constraint>
+					</constraints>
+				</property>
+				<property name="tit:titoloDataCreazione">
+					<title>Data Creazione</title>
+					<type>d:date</type>
+				</property>
+				<property name="tit:titoloDataChiusura">
+					<title>Data Chiusura</title>
+					<type>d:date</type>
+				</property>
+				<property name="tit:titoloPresenzaFascicoli">
+					<title>Presenza fascicoli</title>
+					<type>d:text</type>
+					<constraints>
+						<constraint ref="tit:PresenzaFascicoliList"></constraint>
+					</constraints>
+				</property>
+			</properties>
+		</type>
+		
+		<type name="tit:classe">
+			<title>Classe</title>
+			<description>Una Classe si trova solo in un Titolo</description>
+			<parent>tit:baseFolder</parent>
+			<properties>
+				<property name="tit:classeNome">
+					<title>Nome</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:classeDescrizione">
+					<title>Descrizione</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:classeNumero">
+					<title>Numero</title>
+					<type>d:int</type>
+				</property>
+				<property name="tit:classeStato">
+					<title>Stato</title>
+					<type>d:text</type>
+					<default>Aperto</default>
+					<constraints>
+						<constraint ref="tit:StatoList"></constraint>
+					</constraints>
+				</property>
+				<property name="tit:classeDataCreazione">
+					<title>Data Creazione</title>
+					<type>d:date</type>
+				</property>
+				<property name="tit:classeDataChiusura">
+					<title>Data Chiusura</title>
+					<type>d:date</type>
+				</property>
+				<property name="tit:classePath">
+					<title>Percorso</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+		</type>
+		
+		<type name="tit:fascicolo">
+			<title>Fascicolo</title>
+			<description>Fascicolo</description>
+			<parent>tit:baseFolder</parent>
+			<properties>
+				<property name="tit:fascicoloOggetto">
+					<title>Oggetto</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:fascicoloDescrizione">
+					<title>Descrizione</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:fascicoloNumero">
+					<title>Numero</title>
+					<type>d:int</type>
+				</property>
+				<property name="tit:fascicoloStato">
+					<title>Stato</title>
+					<type>d:text</type>
+					<default>Aperto</default>
+					<constraints>
+						<constraint ref="tit:StatoList"></constraint>
+					</constraints>
+				</property>
+				<property name="tit:fascicoloAmministrazioneTitolare">
+					<title>Amministrazione titolare</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:fascicoloAmministrazioniPartecipanti">
+					<title>Amministrazioni partecipanti</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:fascicoloProcedimentoAmministrativo">
+					<title>Procedimento amministrativo</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:fascicoloResponsabileProcedimento">
+					<title>Responsabile Procedimento</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:fascicoloCollocazioneFisica">
+					<title>Collocazione fisica</title>
+					<type>d:text</type>
+				</property>
+				<property name="tit:fascicoloAnnoApertura">
+					<title>Anno Apertura</title>
+					<type>d:int</type>
+				</property>
+				<property name="tit:fascicoloDataCreazione">
+					<title>Data Creazione</title>
+					<type>d:date</type>
+				</property>
+				<property name="tit:fascicoloDataChiusura">
+					<title>Data Chiusura</title>
+					<type>d:date</type>
+				</property>
+				<property name="tit:fascicoloPath">
+					<title>Percorso</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+		</type>
+	</types>
+	
+	<aspects>
+		<aspect name="tit:counters">
+			<title>Counters</title>
+			<properties>
+				<property name="tit:counterTitolo">
+					<title>Counter titolo</title>
+					<type>d:int</type>
+				</property>
+				<property name="tit:counterClasse">
+					<title>Counter classe</title>
+					<type>d:int</type>
+				</property>
+				<property name="tit:counterFascicolo">
+					<title>Counter fascicolo</title>
+					<type>d:int</type>
+				</property>
+			</properties>
+		</aspect>
+	</aspects>
+	
+</model>

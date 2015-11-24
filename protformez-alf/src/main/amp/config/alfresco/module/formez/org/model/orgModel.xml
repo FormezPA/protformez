@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="org:model" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+	<description>Organization Company Model</description>
+	<author></author>
+	<version>1.0</version>
+	<imports>
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+		<import uri="http://www.reg.it/model/tit/1.0" prefix="tit"></import>
+	</imports>
+
+	<namespaces>
+		<namespace uri="http://www.org.it/model/org/1.0" prefix="org" />
+	</namespaces>
+
+	<types>
+		<!-- nodo base dell'organigramma -->
+		<type name="org:node">
+			<title>Nodo</title>
+			<parent>cm:folder</parent>
+			<associations>
+				<association name="org:rolesAssoc">
+					<title>Ruoli</title>
+					<source>
+						<mandatory>false</mandatory>
+						<many>true</many>
+					</source>
+					<target>
+						<class>org:role</class>
+						<mandatory>false</mandatory>
+						<many>true</many>
+					</target>
+				</association>
+			</associations>
+		</type>
+		<!-- nodo uo dell'organigramma -->
+		<type name="org:nodeUo">
+			<title>UO</title>
+			<parent>org:node</parent>
+			<properties>
+				<property name="org:nodeUoInherit">
+					<title>Eredita Ruoli</title>
+					<type>d:boolean</type>
+					<default>false</default>
+				</property>
+				<property name="org:nodeUoAlltits">
+					<title>Visibilità Titolario totale</title>
+					<type>d:boolean</type>
+					<default>false</default>
+				</property>
+			</properties>
+			<associations>
+				<association name="org:titAssoc">
+					<title>Voci Titolario</title>
+					<source>
+						<mandatory>false</mandatory>
+						<many>true</many>
+					</source>
+					<target>
+						<class>tit:baseFolder</class>
+						<mandatory>false</mandatory>
+						<many>true</many>
+					</target>
+				</association>
+				<association name="org:usersAssoc">
+					<title>Utenti</title>
+					<source>
+						<mandatory>false</mandatory>
+						<many>true</many>
+					</source>
+					<target>
+						<class>cm:person</class>
+						<mandatory>false</mandatory>
+						<many>true</many>
+					</target>
+				</association>
+			</associations>
+		</type>
+		<!-- nodo user dell'organigramma -->
+		<type name="org:nodeUser">
+			<title>User</title>
+			<parent>org:node</parent>
+		</type>
+		<!-- ruolo (insieme di permessi) -->
+		<type name="org:role">
+			<title>Ruolo</title>
+			<parent>cm:content</parent>
+			<mandatory-aspects>
+				<aspect>org:can</aspect>
+			</mandatory-aspects>
+		</type>
+	</types>
+		
+	<aspects>
+		<aspect name="org:can">
+			<title>Permessi</title>
+			<properties>
+				<!--### AMMINISTRAZIONE ###-->
+				<!-- Permessi amministrazione aoo -->
+				<property name="org:canAdmin"><title>canAdmin</title><type>d:boolean</type><default>false</default></property>
+				<!--### PROTOCOLLO ###-->
+				<!-- Permessi lettura protocolli -->
+				<property name="org:canProtocolReadEnt"><title>canProtocolReadEnt</title><type>d:boolean</type><default>false</default></property>
+				<property name="org:canProtocolReadUsc"><title>canProtocolReadUsc</title><type>d:boolean</type><default>false</default></property>
+				<property name="org:canProtocolReadIn"><title>canProtocolReadIn</title><type>d:boolean</type><default>false</default></property>
+				<!-- Permessi creazione protocollo -->
+				<property name="org:canProtocolCreateEnt"><title>canProtocolCreateEnt</title><type>d:boolean</type><default>false</default></property>
+				<property name="org:canProtocolCreateUsc"><title>canProtocolCreateUsc</title><type>d:boolean</type><default>false</default></property>
+				<property name="org:canProtocolCreateIn"><title>canProtocolCreateIn</title><type>d:boolean</type><default>false</default></property>
+				<!-- Permessi modifica protocollo -->
+				<property name="org:canProtocolEdit"><title>canProtocolEdit</title><type>d:boolean</type><default>false</default></property>
+				<!-- Permessi annulla protocollo -->
+				<property name="org:canProtocolCancel"><title>canProtocolCancel</title><type>d:boolean</type><default>false</default></property>
+				<!-- Permessi prenotazione protocolli -->
+				<property name="org:canProtocolPrenotation"><title>canProtocolPrenotation</title><type>d:boolean</type><default>false</default></property>
+				<!-- Permessi creazione documenti protocollo -->
+				<property name="org:canProtocolReport"><title>canProtocolReport</title><type>d:boolean</type><default>false</default></property>
+				<!-- Permessi audit protocollo -->
+				<property name="org:canProtocolAudit"><title>canProtocolAudit</title><type>d:boolean</type><default>false</default></property>
+				<!--### TITOLARIO ###-->
+				<!-- Permessi gestione titolario (titoli, classi) -->
+				<property name="org:canTitolario"><title>canTitolario</title><type>d:boolean</type><default>false</default></property>
+				<!-- Permessi gestione titolario (fascicoli) -->
+				<property name="org:canFascicoli"><title>canFascicoli</title><type>d:boolean</type><default>false</default></property>
+			</properties>
+		</aspect>
+		<!-- aspect for "db-cmis" language use -->
+		<aspect name="org:site">
+			<title>Sitename</title>
+			<properties>
+				<property name="org:siteName">
+					<title>sitename</title>
+					<type>d:text</type>
+				</property>
+			</properties>
+		</aspect>
+		<!-- aspect for "Amministrazione" -->
+		<aspect name="org:gov">
+			<title>Government</title>
+			<properties>
+				<property name="org:govName">
+					<title>Name</title>
+					<type>d:text</type>
+					<default></default>
+				</property>
+				<property name="org:govCode">
+					<title>Code</title>
+					<type>d:text</type>
+					<default></default>
+				</property>
+			</properties>
+		</aspect>
+	 </aspects>
+	
+</model>

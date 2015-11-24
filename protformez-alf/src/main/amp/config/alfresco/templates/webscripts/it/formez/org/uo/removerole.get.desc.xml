@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUoRemoverole</shortname>
+	<description>formezOrgUoRemoverole</description>
+	<url>/formez/org/uo/removerole</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

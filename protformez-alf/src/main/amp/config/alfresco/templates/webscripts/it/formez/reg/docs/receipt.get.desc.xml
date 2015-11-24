@@ -1,0 +1,9 @@
+<webscript>
+  <shortname>Receipt Creation</shortname>
+  <description>Creates a receipt of a node and streams it back to the client</description>
+  <url>/formez/reg/docs/receipt</url>
+  <format default="html">argument</format>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <lifecycle>internal</lifecycle>
+</webscript>

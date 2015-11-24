@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUoAdduser</shortname>
+	<description>formezOrgUoAdduser</description>
+	<url>/formez/org/uo/adduser</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

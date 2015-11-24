@@ -1,0 +1,5 @@
+<webscript>
+  <shortname>formez-audit</shortname>
+  <description>Audit</description>
+  <url>/formez/page/audit</url>
+</webscript>

@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUoSetalltits</shortname>
+	<description>formezOrgUoSetalltits</description>
+	<url>/formez/org/uo/setalltits</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

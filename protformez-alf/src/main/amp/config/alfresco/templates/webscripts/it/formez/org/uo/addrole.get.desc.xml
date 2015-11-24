@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUoAddrole</shortname>
+	<description>formezOrgUoAddrole</description>
+	<url>/formez/org/uo/addrole</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

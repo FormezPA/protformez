@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>formezFlowStart</shortname>
+  <description>Workflow start</description>
+  <url>/formez/flow/start</url>
+  <authentication>user</authentication>
+  <format default="json">argument</format>
+</webscript>

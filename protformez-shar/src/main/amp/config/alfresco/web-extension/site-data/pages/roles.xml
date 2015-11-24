@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+	<id>roles</id>
+	<template-instance>roles-instance</template-instance>
+	<authentication>user</authentication>
+	<components>
+		<component>
+			<region-id>roles</region-id>
+			<url>/formez/page/roles</url>
+		</component>
+    </components>
+</page>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="doc:model" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+	<description>Document Model</description>
+	<author></author>
+	<version>1.0</version>
+	<imports>
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+		<import uri="http://www.reg.it/model/addbook/1.0" prefix="addbook"/>
+	</imports>
+
+	<namespaces>
+		<namespace uri="http://www.doc.it/model/org/1.0" prefix="doc" />
+	</namespaces>
+
+	<aspects>
+		<aspect name="doc:base">
+			<title>Doc base type</title>
+		</aspect>
+		<aspect name="doc:fe">
+			<title>Fatture Emesse</title>
+			<parent>doc:base</parent>
+			<properties>
+				<property name="doc:feDataInizioNumerazione">
+					<title>Data inizio numerazione</title>
+					<type>d:date</type>
+				</property>
+				<property name="doc:fePeriodoDiImposta">
+					<title>Periodo di imposta</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feSerieNumerazione">
+					<title>Serie numerazione</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feCodicePersonaFiscale">
+					<title>Codice persona fiscale</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feDataDocumento">
+					<title>Data documento</title>
+					<type>d:date</type>
+				</property>
+				<property name="doc:feNumeroDocumento">
+					<title>Numero documento</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feDenominazione">
+					<title>Denominazione</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feVia">
+					<title>Via</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feLocalita">
+					<title>Localita</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feProvincia">
+					<title>Provincia</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:fePartitaIva">
+					<title>Partita IVA</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feCodiceFiscale">
+					<title>Codice fiscale</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feIndirizzoEmail">
+					<title>Indirizzo e-mail</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feDestinazione">
+					<title>Destinazione</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feBolleDiRiferimento">
+					<title>Bolle di riferimento</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feTotaleImporto">
+					<title>Totale documento</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feNote">
+					<title>Note</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:feDataScadenzaDocumento">
+					<title>Data Scadenza documento</title>
+					<type>d:date</type>
+				</property>				
+			</properties>
+		</aspect>
+		
+		<aspect name="doc:fr">
+			<title>Fatture Ricevute</title>
+			<parent>doc:base</parent>
+			<properties>
+			    <property name="doc:frDataDocumento">
+					<title>Data documento</title>
+					<type>d:date</type>
+				</property>
+				<property name="doc:frPeriodoDiImposta">
+					<title>Periodo di imposta</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frDataInizioNumerazione">
+					<title>Data inizio numerazione</title>
+					<type>d:date</type>
+				</property>
+			    <property name="doc:frDataRegistrazione">
+					<title>Data registrazione</title>
+					<type>d:date</type>
+				</property>
+				<property name="doc:frNumeroRegistrazione">
+					<title>Numero registrazione</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frSerieNumerazione">
+					<title>Serie numerazione</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frNumeroDocumento">
+					<title>Numero documento</title>
+					<type>d:text</type>
+				</property>
+			    <property name="doc:frDenominazione">
+					<title>Denominazione</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frCodiceFiscale">
+					<title>Codice fiscale</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frPartitaIva">
+					<title>Partita IVA</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frVia">
+					<title>Via</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frLocalita">
+					<title>Localita</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frProvincia">
+					<title>Provincia</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frTotaleImporto">
+					<title>Totale documento</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frNote">
+					<title>Note</title>
+					<type>d:text</type>
+				</property>
+				<property name="doc:frDataScadenzaDocumento">
+					<title>Data Scadenza documento</title>
+					<type>d:date</type>
+				</property>								
+			</properties>
+		</aspect>
+		
+		<aspect name="doc:contacts">
+			<title>Contatti</title>
+			<associations>
+				<association name="doc:destinatariAssoc">
+					<title>Destinatari</title>
+					<source>
+						<mandatory>false</mandatory>
+						<many>true</many>
+					</source>
+					<target>
+						<class>addbook:contact</class>
+						<mandatory>false</mandatory>
+						<many>true</many>
+					</target>
+				</association>
+			</associations>			
+		</aspect>
+		
+		<aspect name="doc:attachments">
+			<title>Attachments</title>
+			<associations>
+				<association name="doc:allegatiAssoc">
+					<title>Allegati</title>
+					<source>
+						<mandatory>false</mandatory>
+						<many>true</many>
+					</source>
+					<target>
+						<class>cm:content</class>
+						<mandatory>false</mandatory>
+						<many>true</many>
+					</target>
+				</association>
+			</associations>			
+		</aspect>
+		
+	</aspects>
+	
+</model>

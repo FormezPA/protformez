@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezRegTitParents</shortname>
+	<description>List parents of node</description>
+	<url>/formez/reg/tit/parents</url>
+	<format default="json">argument</format>
+	<authentication>user</authentication>
+</webscript>

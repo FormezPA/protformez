@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+	<id>protocollo</id>
+	<template-instance>protocollo-instance</template-instance>
+	<authentication>user</authentication>
+	<components>
+		<component>
+			<region-id>protocollo</region-id>
+			<url>/formez/page/protocollo</url>
+		</component>
+    </components>
+</page>

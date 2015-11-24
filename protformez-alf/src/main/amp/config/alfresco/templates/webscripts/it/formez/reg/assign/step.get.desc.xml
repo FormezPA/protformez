@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Assign Step Protocol</shortname>
+  <description>Assign step protocol</description>
+  <url>/formez/reg/assign/step</url>
+  <format default="json">argument</format>
+  <authentication>user</authentication>
+</webscript>

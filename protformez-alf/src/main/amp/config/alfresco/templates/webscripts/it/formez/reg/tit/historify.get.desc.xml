@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezRegTitHistorify</shortname>
+	<description>Historify a titolario folder</description>
+	<url>/formez/reg/tit/historify</url>
+	<format default="json">argument</format>
+	<authentication>user</authentication>
+</webscript>

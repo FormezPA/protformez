@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgAooConfig</shortname>
+	<description>formezOrgAooConfig</description>
+	<url>/formez/org/aoo/config</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

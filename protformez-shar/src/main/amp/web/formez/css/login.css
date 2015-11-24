@@ -1,0 +1,70 @@
+.input,
+.sticky-wrapper input[type="text"],
+.sticky-wrapper input[type="password"],
+.sticky-wrapper textarea,
+.sticky-wrapper select,
+.yui-overlay input[type="text"],
+.yui-overlay input[type="password"],
+.yui-overlay textarea,
+.yui-overlay select,
+.form-element-border,
+.share-form .yui-dt table {
+	background-color:#fff;
+	border:1px solid #c2c2c2;
+	padding:10px;
+	margin:0;
+	color:#3B3B3B;
+	font-size:0.9em;
+	-webkit-box-shadow:inset 0 1px 1px 1px rgba(0,0,0,0.1);
+	box-shadow:inset 0 1px 1px 1px rgba(0,0,0,0.1);
+	width:338px;
+}
+
+.sticky-wrapper, .sticky-footer, .yui-overlay, #lightbox, #ygddfdiv {
+	font-size:100%;
+}
+
+.alfresco-guest .theme-overlay {
+	padding:20px;
+	color: #fff;
+	border: 0;
+	background-color: #2a749c;
+	width:360px;
+	margin:50px 0 0 0;
+}
+
+.theme-company-logo {
+	height: 75px;
+	width: 395px;
+	background-image: url(/share/res/formez/images/logo_mdm_login.png);
+	margin:-120px 0 40px -20px;
+}
+
+.form-fields.login .form-field > span.yui-button {
+	border-color: #000 !important;
+	margin:0 !important;
+	border:0 !important;
+}
+
+.form-fields.login .form-field > span.yui-button > .first-child,
+.form-fields.login .form-field > input[type='submit'] {
+	background-color:#000 !important;
+	color:#fff !important;
+	margin:0 !important;
+	padding:0 !important;
+	border:0 !important;
+}
+
+.form-fields.login .form-field > span.yui-button > .first-child > button,
+.form-fields.login .form-field > input[type='submit'] {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.form-fields.login .form-field > input[type='submit'] {
+	height: 23px;
+    width: 50px;
+}
+
+.login .copy {
+   color: #c2ddec !important;
+}

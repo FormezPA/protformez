@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUsersHome</shortname>
+	<description>formezOrgUsersHome</description>
+	<url>/formez/org/users/home</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

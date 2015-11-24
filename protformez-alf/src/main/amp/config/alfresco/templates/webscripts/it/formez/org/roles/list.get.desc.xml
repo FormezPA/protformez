@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgRolesList</shortname>
+	<description>formezOrgRolesList</description>
+	<url>/formez/org/roles/list</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

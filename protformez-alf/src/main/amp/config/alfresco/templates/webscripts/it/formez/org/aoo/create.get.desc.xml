@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgAooCreate</shortname>
+	<description>formezOrgAooCreate</description>
+	<url>/formez/org/aoo/create</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

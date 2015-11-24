@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUoRemoveuser</shortname>
+	<description>formezOrgUoRemoveuser</description>
+	<url>/formez/org/uo/removeuser</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>

@@ -1,0 +1,9 @@
+<webscript>
+   <shortname>Load Titolario bootstrap data.</shortname>
+   <description>WebScript to import the Titolario hierarchy bootstrap data.</description>
+   <url>/formez/reg/util/bootstrapTitolarioData</url>
+   <format default="json">argument</format>
+   <authentication>user</authentication>
+   <transaction>required</transaction>
+   <lifecycle>internal</lifecycle>
+</webscript>

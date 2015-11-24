@@ -1,0 +1,7 @@
+<webscript>
+  <shortname>Assign Protocol</shortname>
+  <description>Assign protocol to one or more users</description>
+  <url>/formez/reg/assign/assign</url>
+  <format default="json">argument</format>
+  <authentication>user</authentication>
+</webscript>

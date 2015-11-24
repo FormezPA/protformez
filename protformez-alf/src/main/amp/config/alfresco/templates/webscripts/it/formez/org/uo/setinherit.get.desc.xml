@@ -1,0 +1,7 @@
+<webscript>
+	<shortname>formezOrgUoSetinherit</shortname>
+	<description>formezOrgUoSetinherit</description>
+	<url>/formez/org/uo/setinherit</url>
+	<authentication>user</authentication>
+	<format default="json">argument</format>
+</webscript>
